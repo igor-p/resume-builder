@@ -1,0 +1,52 @@
+include mixins.pug
+header
+    h1=name
+.flex.inline.boxes
+    if email
+        div: a(href="mailto:" + email)=email
+    if phone
+        div
+            +icon("phone")
+            span=phone
+    if address
+        div
+            +icon("home")
+            span=address
+
+if work
+    section
+        h2 Work Experience
+        each job in (work || [])
+            article
+                h3
+                    div=job.company
+                    div.meta=job.location
+                    div.meta=job.from + ' – ' + job.to
+            i=job.position
+            ul
+                each duty in job.duties
+                    li
+                        span.bullet •
+                        =duty
+            .tags
+                each skill in job.skills
+                    span=skill
+if education
+    section
+        h2 Education
+        article
+            h3=education.school
+                span.meta=education.from + ' – ' + education.to
+            i=education.degree
+            if education.coursework
+                h4 Coursework:
+                .tags
+                    each course in education.coursework
+                        span=course
+if publications && publications.length > 0
+    section
+        h2 Publications
+        each publication in publications
+            article
+                ='"' + publication.title + '", ' + publication.publisher + ", " + publication.date
+                a(href=publication.url target="_blank")

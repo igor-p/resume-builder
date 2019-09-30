@@ -1,0 +1,66 @@
+{
+    "name": "First Last",
+    "email": "test@email.com",
+    "phone": "123-456-7890",
+    "address": "Nowhere, NY",
+    "work": [
+        {
+            "company": "Apples And Bananas",
+            "position": "Software Engineer",
+            "location": "Nowhere, NY",
+            "from": "January 2018",
+            "to": "Present",
+            "duties": [
+                "Responsible for managing apple-harvesting infrastructure",
+                "Built apple-tracking system (ATS)",
+                "Interfaced with customers to get apple-picking requirements",
+                "Exfoliated and extrapolated data"
+            ],
+            "skills": ["JavaScript", "React", "MongoDB", "Webpack", "Git"]
+        }, {
+            "company": "BigCo",
+            "position": "Software Engineer",
+            "location": "Gotham, NY",
+            "from": "January 2014",
+            "to": "January 2018",
+            "duties": [
+                "Built enterprise software for a global conglomerate",
+                "Interfaced within my team and across departments to achieve cohesive collaboration",
+                "Redefined and revitalized tools-based systems-focused CRMs to deliver consistent KPIs",
+                "Reticulated splines"
+            ],
+            "skills": ["Java", "Spring", "SVN", "Business Processes", "Synergy"]
+        }, {
+            "company": "Startup",
+            "location": "San Francisco, CA",
+            "from": "June 2010",
+            "to": "December 2013",
+            "duties": [
+                "Consumed free food and beer, produced awesome and cool-looking code",
+                "Hustled, cranked, and shipped all day every day",
+                "Participated in ping pong and foosball tournaments"
+            ],
+            "skills": ["JavaScript", "jQuery", "Wordpress", "Drupal", "MySQL"]
+        }
+    ],
+    "education": {
+        "school": "Apple University",
+        "degree": "B.S. Apple-Picking",
+        "location": "City, State",
+        "from": "September 2006",
+        "to": "May 2010"
+    },
+    "publications": [
+        {
+            "title": "How to publish papers",
+            "publisher": "Science Magazine",
+            "url": "http://www.google.com",
+            "date": "February 2015"
+        }, {
+            "title": "Case Study: Picking apples using the Granny Smith Method",
+            "publisher": "Apple Daily",
+            "url": "http://www.google.com",
+            "date": "June 2013"
+        }
+    ]
+}
